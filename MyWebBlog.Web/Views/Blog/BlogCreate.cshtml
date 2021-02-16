@@ -1,0 +1,28 @@
+﻿@model MyWebBlog.ViewModel.BlogViewModel
+@{
+    ViewData["Title"] = "CreateBlog";
+}
+
+<h1>Create Blog</h1>
+@using (Html.BeginForm("SendBlogItem", "Blog", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.writer, new { @value = @Model.writer })
+    @Html.TextBoxFor(m => m.writer)
+    @Html.LabelFor(m => m.title)
+    @Html.TextBoxFor(m => m.title)
+    @Html.LabelFor(m => m.thumbnail)
+    @Html.TextBoxFor(m => m.thumbnail)
+    @Html.LabelFor(m => m.body)
+    <textarea asp-for="body" id="body" class="ckeditor" name="body" typeof="text"></textarea>
+    @Html.TextAreaFor(m=>m.body, new { @class="col-12"})
+    <button type="submit" onclick="insert()" id="saveData">Save</button>
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="~/js/ckeditor/ckeditor.js"></script>
+<script>
+    $(document).ready(function () {
+        CKEDITOR.replace('#body')
+    });
+</script>

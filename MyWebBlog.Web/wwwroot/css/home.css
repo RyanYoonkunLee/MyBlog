@@ -1,0 +1,42 @@
+﻿.mainbannerbox {
+    padding-top:15%;
+    padding-bottom:15%;
+}
+
+.mainbannertext {
+    color: white;
+    position: relative;
+}
+
+.navcolor {
+    color: white !important;
+    margin: 3%;
+    margin-left: 10%;
+    text-decoration: none;
+}
+
+
+.contact {
+    color: white;
+    margin: 1%;
+    position: absolute;
+    font-size: 13px;
+}
+a.nav-link:link, a.nav-link:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-container {
+    width: 100%;
+    position: relative;
+}

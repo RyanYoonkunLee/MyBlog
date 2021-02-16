@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    <link href="~/css/home.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+}
+
+<div class="overflow-hidden">
+    <div class="video-container">
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+            <source src="~/images/mylivewallpapers.com-Neon-Lines.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white navstyle">
+        <div class="container-fluid">
+            <a class="navbar-brand navcolor naviconbox" asp-area="" asp-controller="Home" asp-action="Index"> RYAN LEE  |  <img class="nameicon" src="~/images/mainpage/icon/idea2.png" /> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse navtextstyle">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark navcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark navcolor" asp-area="" asp-controller="Blog" asp-action="Index">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center mainbannerbox">
+        <h1 class="mainbannertext">&lt;&gt; Hello World! &lt;/&gt;</h1>
+        <h1 class="mainbannertext">Welcome To Ryan's Website</h1>
+    </div>
+</div>
+<div>
+    <h1>This come here</h1>
+</div>
