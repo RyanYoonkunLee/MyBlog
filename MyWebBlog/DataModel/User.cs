@@ -4,8 +4,7 @@ using System.Text;
 
 namespace MyWebBlog.DataModel
 {
-    public class User
-    {
+    public class Admin { 
         public string Name { get; set; }
         public string Email { get; set; }
     }

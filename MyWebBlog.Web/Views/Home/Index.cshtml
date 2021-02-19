@@ -1,39 +1,57 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
     <link href="~/css/home.css" rel="stylesheet" />
-<link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+<script src="~/js/homepage.js"></script>
 }
 
-<div class="overflow-hidden">
-    <div class="video-container">
-        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-            <source src="~/images/mylivewallpapers.com-Neon-Lines.mp4" type="video/mp4">
-        </video>
-    </div>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white navstyle">
-        <div class="container-fluid">
-            <a class="navbar-brand navcolor naviconbox" asp-area="" asp-controller="Home" asp-action="Index"> RYAN LEE  |  <img class="nameicon" src="~/images/mainpage/icon/idea2.png" /> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse navtextstyle">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark navcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark navcolor" asp-area="" asp-controller="Blog" asp-action="Index">Blog</a>
-                    </li>
-                </ul>
+<div class="scroll-container">
+    <section class="overflow-hidden fullpage">
+        <div class="video-container">
+            <video playsinline autoplay muted loop id="bgvid">
+                <source src="~/images/mylivewallpapers.com-Neon-Lines.mp4" type="video/mp4">
+            </video>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white navstyle">
+            <div class="container-fluid">
+                <a class="navbar-brand navcolor naviconbox" asp-area="" asp-controller="Home" asp-action="Index"> RYAN LEE  |  <img class="nameicon" src="~/images/mainpage/icon/idea2.png" /> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse navtextstyle">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark navcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark navcolor" asp-area="" asp-controller="Blog" asp-action="Index">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="text-center mainbannerbox ">
+            <h1 class="mainbannertext">&lt;&gt; Hello World! &lt;/&gt;</h1>
+            <h1 class="mainbannertext">Welcome To Ryan's Website</h1>
+            <a class="bannerarrowbox" href="#techskill">
+                <h3 class="arrowtext">Click Here</h3>
+                <img src="~/images/mainpage/down-arrow.png" class="arrowimg"/>
+            </a>
+        </div>
+    </section>
+    <section class="fullpage tech" id="techskill">
+        <h1>Technical Skills</h1>
+        <div>
+            <div class="techskillbox">
+                <h3 class="techtext"><img class="techicon" src="~/images/mainpage/techskill/coding (1).png" />Programming Language</h3>
+            </div>
+            <div class="techskillbox">
+                <h3 class="techtext"><img class="techicon" src="~/images/mainpage/techskill/add-database-button-for-interface.png" />Database</h3>
             </div>
         </div>
-    </nav>
-    <div class="text-center mainbannerbox">
-        <h1 class="mainbannertext">&lt;&gt; Hello World! &lt;/&gt;</h1>
-        <h1 class="mainbannertext">Welcome To Ryan's Website</h1>
-    </div>
-</div>
-<div>
-    <h1>This come here</h1>
+    </section>
+    <section class="fullpage">
+        <h1>this is page 3</h1>
+    </section>
 </div>

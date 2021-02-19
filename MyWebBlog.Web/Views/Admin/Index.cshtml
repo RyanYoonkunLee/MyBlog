@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<a href='@Url.Action("BlogCreate","Admin")'>
+    <input type="button" value="Create" />
+</a>
+<table>
+        <thead>
+            <tr>
+                <td>Date</td>
+                <td>Title</td>
+                <td>Author</td>
+                <td>Functions</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Date</td>
+                    <td>@item.Title</td>
+                    <td>@item.Author</td>
+                    <td>
+                        @Html.ActionLink("Update", "BlogUpdate", "Admin", new { id = item.Id })
+                        @Html.ActionLink("Delete", "BlogDelete", "Admin", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

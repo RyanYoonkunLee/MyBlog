@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "login";
+}
+
+<h1>login</h1>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="135170595249-0lh8age13iiq1o7s645iuq85t73otccl.apps.googleusercontent.com">
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<a href="#" onclick="signOut();">Sign out</a>
+<script>
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+            console.log('User signed out.');
+        });
+    }
+</script>
+<script>
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();      
+        var url = "/Account/Verify?id=" + profile.getEmail() + "&name=" + profile.getName(); 
+        window.location.href = url; 
+    }
+</script>

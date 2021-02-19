@@ -30,35 +30,6 @@
     <h3>Ryan's Development Note</h3>
 </div>
 
-<a href='@Url.Action("BlogCreate","Blog")'>
-    <input type="button" value="Create" />
-</a>
-
-@*<table>
-        <thead>
-            <tr>
-                <td>Date</td>
-                <td>Title</td>
-                <td>Author</td>
-                <td>Functions</td>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.Date</td>
-                    <td>@Html.ActionLink(item.Title, "BlogDetail", "Blog", new { id = item.Id })</td>
-                    <td>@item.Author</td>
-                    <td>
-                        @Html.ActionLink("Update", "BlogUpdate", "Blog", new { id = item.Id })
-                        @Html.ActionLink("Delete", "BlogDelete", "Blog", new { id = item.Id })
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>*@
-
 @foreach (var item in Model)
 {
     <div class="shadow blogBox">
