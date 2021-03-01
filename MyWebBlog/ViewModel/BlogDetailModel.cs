@@ -7,12 +7,12 @@ namespace MyWebBlog.ViewModel
     public class BlogDetailModel
     {
         public Guid Id { get; set; }
-        public string writer { get; set; }
-        public string body { get; set; }
-        public string title { get; set; }
-        public string date { get; set; }
+        public string Writer { get; set; }
+        public string Body { get; set; }
+        public string Title { get; set; }
+        public string Date { get; set; }
 
-        public virtual BlogDetailRecommend next { get; set; }
-        public virtual BlogDetailRecommend previous { get; set; }
+        public virtual BlogDetailRecommend Next { get; set; }
+        public virtual BlogDetailRecommend Previous { get; set; }
     }
 }

@@ -1,11 +1,51 @@
-﻿.mainbannerbox {
-    padding-top:15%;
-    padding-bottom:15%;
+﻿.width-90{
+    width:90%;
+}
+.width-15{
+    width:15%;
+}
+.width-20 {
+    width: 20%;
+}
+.width-30{
+    width:30%;
+}
+.width-40 {
+    width: 40%;
+}
+.width-50{
+    width:50%;
+}
+.width-60 {
+    width:60%;
+}
+float-l{
+    float:left;
+}
+.width-100{
+    width:100%;
 }
 
-.mainbannertext {
+.mt5 {
+    margin-top: 5%;
+}
+
+.mainbannerbox {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.mainbannerstyle {
     color: white;
     position: relative;
+}
+
+.mainbannertitle {
+    font-size: 5vw;
+    letter-spacing: 5px;
+}
+.mainbannertext {
+    font-size: 2.3vw;
 }
 
 .navcolor {
@@ -15,12 +55,6 @@
     text-decoration: none;
 }
 
-.contact {
-    color: white;
-    margin: 1%;
-    position: absolute;
-    font-size: 13px;
-}
 a.nav-link:link, a.nav-link:hover {
     color: white !important;
     text-decoration: none;
@@ -59,8 +93,8 @@ section {
 }
 .bannerarrowbox {
     position: absolute;
-    top: 28%;
-    left: 48%;
+    top: 15%;
+    left: 43%;
 }
 
 .arrowtext{
@@ -78,23 +112,236 @@ html {
     scroll-behavior: smooth;
 }
 
+.mobile-video {
+    display: none;
+}
+
 /* Technical skills*/
 .techskillbox {
     float: left;
-    width: 50%;
+    width: 100%;
+    margin-bottom: 5%;
 }
 
 .techicon {
-    width: 50px;
+    width: 5% !important;
     height: auto;
     margin-right: 5%;
 }
-
+tbody {
+    line-height: 15px;
+}
 .techtext {
-    text-align: center;
-    color: #00a8f3;
+    margin-left: 25px;
+    color: #393939;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 2vw;
+}
+.fade{
+    opacity:0;
 }
 
-.tech{
-    background-color: black;
+.border-left-box-tech {
+    border-left: 5px solid black;
+    overflow: hidden;
 }
+
+
+.tech {
+    background-color: #F4F4F4;
+    color: #393939;
+    padding: 6%;
+    padding-left: 10%;
+}
+.progress {
+    width: 100%;
+    background-color: #ddd;
+    height: 30px;
+}
+
+.bar {
+    width: 1%;
+    height: 30px;
+    background-color: #393939;
+}
+
+thead {
+    font-weight: bold;
+    text-align: center;
+    margin: 10%;
+    line-height: 5;
+    font-size: 20px;
+}
+
+.langtext {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#myBarValue {
+    border: none;
+    background: white;
+    width: 4%;
+}
+
+/* About Me */
+.aboutme {
+    background-image: url('../images/mainpage/aboutme/Group 9.png');
+    color: white;
+    padding: 10%;
+}
+
+.border-left-box-aboutme {
+    border-left: 5px solid white;
+    overflow:hidden;
+}
+
+.about-title-box {
+    padding: 1%;
+    padding-left: 7%;
+}
+.abouttitle {
+    font-size: 5vw;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.changetext {
+    color: white;
+    position: relative;
+}
+.about-text-title {
+    font-size: 2.6vw;
+    margin-bottom: 7%;
+}
+.abouttext {
+    font-size: 1.7vw;
+    margin-bottom: 7%;
+}
+
+.floatleft {
+    float: left;
+}
+
+#changing_text {
+    border-bottom: 2px solid white;
+}
+
+
+/*project*/
+.project {
+    background-color: #393939;
+    color: white;
+    padding: 6%;
+    padding-left: 10%;
+}
+.projecttitle {
+    font-size: 5vw;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    padding: 1%;
+    padding-left: 7%;
+}
+.project-item {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 7%;
+}
+.project-item-title {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.project-item-text {
+    font-size: 1.5vw;
+    line-height: 20px;
+    padding-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 25%;
+}
+.border-left-box-project {
+    border-left: 5px solid white;
+    overflow: hidden;
+}
+.project-button {
+    color: white;
+    background-color: #35A3F4;
+    padding: 5%;
+    font-weight: bold;
+}
+.project-button:hover .project-button:active{
+    text-decoration:none;
+    color:white;
+}
+
+/* Contact */
+
+.contact {
+    background-color: black;
+    color: white;
+    padding: 4%;
+    padding-left: 10%;
+}
+.contact-box{
+    padding: 1%;
+    padding-left: 7%;
+}
+.contact-title {
+    font-size: 5vw;
+    margin-bottom: 15%;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.contact-name {
+    font-size: 2.5vw;
+}
+.contact-text {
+    font-size: 1.5vw;
+}
+.contact-detail-box {
+    margin-bottom: 20%;
+}
+.icon-width {
+    margin-right: 10%;
+}
+
+.copy {
+    margin-top: 15%;
+}
+.download-icon {
+    width: 25%;
+}
+.contact-text{
+    font-size:1.5vw;
+}
+.contact-textbox {
+    font-size: 1.5vw;
+    margin-bottom: 5%;
+}
+.email-form {
+    padding: 5%;
+}
+
+.contact-button {
+    color: white;
+    background-color: #35A3F4;
+    padding: 3%;
+    font-weight: bold;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+
+
+@media(max-width: 800px) {
+    .desktop-video{
+        display:none;
+    }
+    .mobile-video{
+        display:block;
+    }
+}
+

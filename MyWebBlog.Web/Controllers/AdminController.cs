@@ -36,7 +36,8 @@ namespace MyWebBlog.Web.Controllers
         public IActionResult BlogCreate()
         {
             BlogViewModel blog = new BlogViewModel();
-            blog.writer = "Yoonkun Lee";
+            blog.Writer = "Ryan Lee";
+            ViewBag.BlogLanguage = _blog.GetBlogLanguages();
             return View(blog);
         }
         public IActionResult SendBlogItem(BlogViewModel blog)
@@ -51,8 +52,8 @@ namespace MyWebBlog.Web.Controllers
         public IActionResult BlogUpdate(Guid id)
         {
             BlogDataModel foundBlog = _blog.find(id);
-            var blog = blogservice.ConvertDataToDetailModel(foundBlog);
-
+            var blog = blogservice.ConvertDataToViewModel(foundBlog);
+            ViewBag.BlogLanguage = _blog.GetBlogLanguages();
             return View(blog);
         }
         [HttpPost]

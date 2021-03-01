@@ -1,15 +1,22 @@
-﻿@{
+﻿@model MyWebBlog.DataModel.Email
+@{
     ViewData["Title"] = "Home Page";
     <link href="~/css/home.css" rel="stylesheet" />
     <link href="~/css/site.css" rel="stylesheet" />
-<script src="~/js/homepage.js"></script>
+    <link href="~/css/font.css" rel="stylesheet" />
+    <script src="~/js/homepage.js"></script>
 }
 
 <div class="scroll-container">
     <section class="overflow-hidden fullpage">
-        <div class="video-container">
+        <div class="video-container desktop-video">
             <video playsinline autoplay muted loop id="bgvid">
                 <source src="~/images/mylivewallpapers.com-Neon-Lines.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-container mobile-video">
+            <video playsinline autoplay muted loop id="bgvid">
+                <source src="~/images/MOBILE-Neon-Lines.mp4" type="video/mp4">
             </video>
         </div>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white navstyle">
@@ -22,36 +29,174 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse navtextstyle">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark navcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark navcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark navcolor" asp-area="" asp-controller="Blog" asp-action="Index">Blog</a>
+                            <a class="nav-link text-dark navcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">ABOUT ME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark navcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark navcolor" asp-area="" asp-controller="Blog" asp-action="Index">BLOG</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="text-center mainbannerbox ">
-            <h1 class="mainbannertext">&lt;&gt; Hello World! &lt;/&gt;</h1>
-            <h1 class="mainbannertext">Welcome To Ryan's Website</h1>
-            <a class="bannerarrowbox" href="#techskill">
-                <h3 class="arrowtext">Click Here</h3>
-                <img src="~/images/mainpage/down-arrow.png" class="arrowimg"/>
+        <div class="text-center mainbannerbox">
+            <h1 class="mainbannerstyle mainbannertitle bebas-font">&lt;&gt; RYAN LEE &lt;/&gt;</h1>
+            <h3 class="mainbannerstyle mainbannertext opensance-font">Full stack C# Developer</h3>
+            <h3 class="mainbannerstyle mainbannertext opensance-font">based in Auckland</h3>
+            <a class="bannerarrowbox" href="#aboutme">
+                <h3 class="arrowtext opensance-font">FIND OUT MORE</h3>
+                <img src="~/images/mainpage/down-arrow.png" class="arrowimg" />
             </a>
         </div>
     </section>
-    <section class="fullpage tech" id="techskill">
-        <h1>Technical Skills</h1>
-        <div>
-            <div class="techskillbox">
-                <h3 class="techtext"><img class="techicon" src="~/images/mainpage/techskill/coding (1).png" />Programming Language</h3>
+    <section class="fullpage aboutme" id="aboutme">
+        <div class="border-left-box-aboutme">
+            <div class="width-40 float-left about-title-box">
+                <h1 class="bebas-font abouttitle">About Me</h1>
+                <h3 class="changetext mt5 opensance-font">I am a <span id="changing_text"></span></h3>
             </div>
-            <div class="techskillbox">
-                <h3 class="techtext"><img class="techicon" src="~/images/mainpage/techskill/add-database-button-for-interface.png" />Database</h3>
+            <div class="width-60 float-left about-title-box">
+                <h3 class="opensance-font about-text-title">
+                    I am a Full Stack Developer based in Auckland, New Zealand.
+                </h3>
+                <h4 class="opensance-font abouttext">
+                    My professional experience includes HTML5/CSS3, C#, JavaScript(React.js, Node.js)
+                </h4>
+                <h4 class="opensance-font abouttext">
+                    I enjoy being challenged and engaging with projects that require me to work outside my
+                    comfort and knowledge set, as continuing to learn new languages and development
+                    techniques are important to me and the success of my future career.
+                </h4>
             </div>
         </div>
     </section>
-    <section class="fullpage">
-        <h1>this is page 3</h1>
+    <section class="fullpage tech ">
+        <div class="border-left-box-tech">
+            <div class="width-40 float-left about-title-box">
+                <h1 class="bebas-font abouttitle">TECHNICAL SKILLS</h1>
+            </div>
+            <div class="width-60 float-left tech-title-box">
+                <div class="fade">
+                    <div class="techskillbox " id="language">
+                        <h3 class="techtext"><img class="techicon" src="~/images/mainpage/techskill/Group 4.png" />PROGRAMMING LANGUAGE</h3>
+                        <table class="width-90 ">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in ViewBag.Languages)
+                                {
+                                    <tr>
+                                        <td class="width-20">
+                                            <p class="langtext">@item.Name</p>
+                                        </td>
+                                        <td>
+                                            <div class="progress" data-width="@item.Score">
+                                                <div class="@item.Score bar" data-name="@item.Score"></div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="techskillbox">
+                        <h3 class="techtext"><img class="techicon" src="~/images/mainpage/techskill/Group 5.png" />DATABASE</h3>
+                        <table class="width-90 ">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in ViewBag.Databases)
+                                {
+                                    <tr>
+                                        <td class="width-20">
+                                            <p class="langtext">@item.Name</p>
+                                        </td>
+                                        <td>
+                                            <div class="progress" data-width="@item.Score">
+                                                <div class="@item.Score bar" data-name="@item.Score"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="fullpage project ">
+        <div class="border-left-box-aboutme">
+            <h1 class="bebas-font projecttitle">PROJECT</h1>
+            <div class="project-item">
+                <div class="width-40 float-left about-title-box opensance-font">
+                    <h1 class="project-item-title">Health Up Limited</h1>
+                    <div class="project-item-text">
+                        <p>ASP.NET CORE framework</p>
+                        <p>C#</p>
+                        <p>Razor</p>
+                        <p>Responsive CSS</p>
+                        <p>Bootstrap</p>
+                        <p>JavaScript</p>
+                        <p>Entity Framework</p>
+                        <p>MS SQL</p>
+                    </div>
+                    <a class="project-button" href="https://www.healthup.co.nz" target="_blank">CLICK HERE TO VIEW</a>
+                </div>
+                <div class="width-60 float-left about-title-box">
+                    <img class="width-100" lazy src="~/images/mainpage/portfolio/healthup.jpg" />
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="width-40 float-left about-title-box opensance-font">
+                    <h1 class="project-item-title">Cindy Jeon:</h1>
+                    <h1 class="project-item-title">Stay Creative</h1>
+                    <div class="project-item-text">
+                        <p>React.js</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                        <p>Json (store file path)</p>
+                        <p>Netlify (deploy)</p>
+                    </div>
+                    <a class="project-button" href="https://www.cindyjeon.com" target="_blank">CLICK HERE TO VIEW</a>
+                </div>
+                <div class="width-60 float-left about-title-box">
+                    <img class="width-100" lazy src="~/images/mainpage/portfolio/cindy.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="fullpage contact">        
+        <div class="width-50 floatleft contact-box">
+            <h1 class="bebas-font contact-title">Contact</h1>
+            <div class="width-100 contact-detail-box">
+                <h3 class="opensance-font font-weight-bold contact-name">Ryan Yoonkun Lee</h3>
+                <h4 class="opensance-font contact-text"><strong>P:</strong> 021 035 0546</h4>
+                <p4 class="opensance-font contact-text"><strong>E:</strong> ryan:yoonkun.lee@gmail.com</p4>
+            </div>
+            <a class="download-icon" href="~/Download/Ryan Lee Resume 2021.pdf" download="Ryan_Resume"><img class="width-15 icon-width" src="~/images/mainpage/icon/CV.png"/></a>
+            <a class="download-icon" href="https://www.linkedin.com/in/yoonkun-ryan-lee/" target="_blank"><img class="width-15 icon-width" src="~/images/mainpage/icon/Linkedin.png" /></a>
+            <a class="download-icon" href="https://github.com/RyanYoonkunLee" target="_blank"><img class="width-15 icon-width" src="~/images/mainpage/icon/github.png" /></a>
+            <p class="copy">Copyright <script>document.write(new Date().getFullYear())</script> Ryan Lee</p>
+        </div>
+        <div class="width-50 floatleft email-form">
+            @using(Html.BeginForm("SendEmail", "Home", FormMethod.Post))
+            {
+                @Html.LabelFor(m => m.Name, new { @class="width-100 contact-text" })
+                @Html.TextBoxFor(m => m.Name, new { @class="width-90 contact-textbox" })
+                @Html.LabelFor(m =>m.SenderEmail, new { @class="width-100 contact-text" })
+                @Html.TextBoxFor(m=>m.SenderEmail, new { @class="width-90 contact-textbox" })
+                @Html.LabelFor(m=>m.Message, new { @class="width-100 contact-text" })
+                @Html.TextAreaFor(m=>m.Message, new { @class="width-90 contact-textbox", rows="7"})
+            }
+            <button class="contact-button" type="submit">SEND</button>
+        </div>
     </section>
 </div>

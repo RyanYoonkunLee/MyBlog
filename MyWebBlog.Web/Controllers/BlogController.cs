@@ -39,7 +39,7 @@ namespace MyWebBlog.Web.Controllers
             
             for (var i=0; i<list.Count; i++)
             {
-                if(foundBlog.date == list[i].date)
+                if(foundBlog.Date == list[i].Date)
                 {
                     if((i - 1) >= 0 )
                     {

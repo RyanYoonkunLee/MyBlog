@@ -4,17 +4,23 @@
 }
 
 <h1>Create Blog</h1>
-@using (Html.BeginForm("SendBlogItem", "Blog", FormMethod.Post))
+@using (Html.BeginForm("SendBlogItem", "Admin", FormMethod.Post))
 {
-    @Html.LabelFor(m => m.writer, new { @value = @Model.writer })
-    @Html.TextBoxFor(m => m.writer)
-    @Html.LabelFor(m => m.title)
-    @Html.TextBoxFor(m => m.title)
-    @Html.LabelFor(m => m.thumbnail)
-    @Html.TextBoxFor(m => m.thumbnail)
-    @Html.LabelFor(m => m.body)
-    <textarea asp-for="body" id="body" class="ckeditor" name="body" typeof="text"></textarea>
-    @Html.TextAreaFor(m=>m.body, new { @class="col-12"})
+    @Html.LabelFor(m => m.Writer, new { @value = @Model.Writer })
+    @Html.TextBoxFor(m => m.Writer)
+    @Html.LabelFor(m=>m.Language)
+    <select asp-for="Language" id="BlogLanguage">
+        @foreach(var item in ViewBag.BlogLanguage)
+        {
+            <option value="@item.Name">@item.Name</option>
+        }
+    </select>
+    @Html.LabelFor(m => m.Title)
+    @Html.TextBoxFor(m => m.Title)
+    @Html.LabelFor(m => m.Thumbnail)
+    @Html.TextBoxFor(m => m.Thumbnail)
+    @Html.LabelFor(m => m.Body)
+    <textarea asp-for="Body" id="body" class="ckeditor" name="body" typeof="text"></textarea>
     <button type="submit" onclick="insert()" id="saveData">Save</button>
 }
 

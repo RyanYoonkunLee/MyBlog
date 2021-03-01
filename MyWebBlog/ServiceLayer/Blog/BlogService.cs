@@ -18,28 +18,42 @@ namespace MyWebBlog.ServiceLayer.Blog
         public BlogDataModel CreateBlogDataModel(BlogViewModel blog)
         {
             BlogDataModel newBlog = new BlogDataModel();            
-            newBlog.writer = blog.writer;
-            newBlog.title = blog.title;
-            newBlog.Thumbnail = blog.thumbnail;
+            newBlog.Writer = blog.Writer;
+            newBlog.Title = blog.Title;
+            newBlog.Language = blog.Language;
+            newBlog.Thumbnail = blog.Thumbnail;
 
-            for(var i =0; i<blog.body.Length; i++)
+            for(var i =0; i<blog.Body.Length; i++)
             {
-                newBlog.body = newBlog.body + blog.body[i];
+                newBlog.Body = newBlog.Body + blog.Body[i];
             }
             
-            newBlog.date = DateTime.Now;
+            newBlog.Date = DateTime.Now;
 
             return newBlog;
+        }
+
+        public BlogViewModel ConvertDataToViewModel(BlogDataModel data)
+        {
+            BlogViewModel view = new BlogViewModel();
+            view.Id = data.Id;
+            view.Language = data.Language;
+            view.Title = data.Title;
+            view.Thumbnail = data.Thumbnail;
+            view.Body = data.Body;
+            view.Writer = data.Writer;
+
+            return view;
         }
 
         public BlogDetailModel ConvertDataToDetailModel(BlogDataModel data)
         {
             BlogDetailModel blogDetailModel = new BlogDetailModel();
             blogDetailModel.Id = data.Id;
-            blogDetailModel.writer = data.writer;
-            blogDetailModel.title = data.title;
-            blogDetailModel.body = data.body;
-            blogDetailModel.date = data.date.ToString("dd/MM/yyyy");
+            blogDetailModel.Writer = data.Writer;
+            blogDetailModel.Title = data.Title;
+            blogDetailModel.Body = data.Body;
+            blogDetailModel.Date = data.Date.ToString("dd/MM/yyyy");
             
             return blogDetailModel;
         }
@@ -48,18 +62,18 @@ namespace MyWebBlog.ServiceLayer.Blog
         {
             BlogDetailModel blogDetailModel = new BlogDetailModel();
             blogDetailModel.Id = data.Id;
-            blogDetailModel.writer = data.writer;
-            blogDetailModel.title = data.title;
-            blogDetailModel.body = data.body;
-            blogDetailModel.date = data.date.ToString("dd/MM/yyyy");
-            blogDetailModel.previous = new BlogDetailRecommend();
-            blogDetailModel.next = new BlogDetailRecommend();
-            blogDetailModel.previous.Id = previous.Id;
-            blogDetailModel.previous.Title = previous.title;
-            blogDetailModel.previous.Thumbnail = previous.Thumbnail;
-            blogDetailModel.next.Id = next.Id;
-            blogDetailModel.next.Title = next.title;
-            blogDetailModel.next.Thumbnail = "/Thumbnail/" + next.Thumbnail;
+            blogDetailModel.Writer = data.Writer;
+            blogDetailModel.Title = data.Title;
+            blogDetailModel.Body = data.Body;
+            blogDetailModel.Date = data.Date.ToString("dd/MM/yyyy");
+            blogDetailModel.Previous = new BlogDetailRecommend();
+            blogDetailModel.Next = new BlogDetailRecommend();
+            blogDetailModel.Previous.Id = previous.Id;
+            blogDetailModel.Previous.Title = previous.Title;
+            blogDetailModel.Previous.Thumbnail = previous.Thumbnail;
+            blogDetailModel.Next.Id = next.Id;
+            blogDetailModel.Next.Title = next.Title;
+            blogDetailModel.Next.Thumbnail = "/Thumbnail/" + next.Thumbnail;
             return blogDetailModel;
         }
 
@@ -67,17 +81,17 @@ namespace MyWebBlog.ServiceLayer.Blog
         {
             BlogListViewModel blogListViewModel = new BlogListViewModel();
             blogListViewModel.Id = data.Id;
-            blogListViewModel.Author = data.writer;
-            blogListViewModel.Title = data.title;
+            blogListViewModel.Author = data.Writer;
+            blogListViewModel.Title = data.Title;
             blogListViewModel.Thumbnail = "/Thumbnail/" + data.Thumbnail;
            DateTime localDate = DateTime.Now;
-            if (data.date.Date == localDate.Date)
+            if (data.Date.Date == localDate.Date)
             {
-                blogListViewModel.Date = data.date.ToString("hh:mm tt");
+                blogListViewModel.Date = data.Date.ToString("hh:mm tt");
             }
             else
             {
-                blogListViewModel.Date = data.date.ToString("dd/MM/yyyy");
+                blogListViewModel.Date = data.Date.ToString("dd/MM/yyyy");
             }
 
             return blogListViewModel;

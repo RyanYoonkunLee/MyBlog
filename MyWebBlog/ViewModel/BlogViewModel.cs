@@ -7,9 +7,10 @@ namespace MyWebBlog.ViewModel
     public class BlogViewModel
     {
         public Guid Id { get; set; }
-        public string writer { get; set; }
-        public string[] body { get; set; }
-        public string title { get; set; }
-        public string thumbnail { get; set; }
+        public string Writer { get; set; }
+        public string Body { get; set; }
+        public string Title { get; set; }
+        public string Thumbnail { get; set; }
+        public string Language { get; set; }
     }
 }

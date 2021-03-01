@@ -7,10 +7,11 @@ namespace MyWebBlog.DataModel
     public class BlogDataModel
     {
         public Guid Id { get; set; }
-        public string writer { get; set; }
-        public DateTime date { get; set; }
-        public string title { get; set; }
-        public string body { get; set; }
+        public string Writer { get; set; }
+        public DateTime Date { get; set; }
+        public string Title { get; set; }
+        public string Body { get; set; }
         public string Thumbnail { get; set; }
+        public string Language { get; set; }
     }
 }

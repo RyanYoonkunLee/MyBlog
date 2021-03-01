@@ -6,42 +6,42 @@
 <link href="~/css/prism.css" rel="stylesheet" />
 <div>
     <div class="title">
-        <h6 class="titleDetail">@Model.writer | @Model.date</h6>
-        <h1>@Model.title</h1>
+        <h6 class="titleDetail">@Model.Writer | @Model.Date</h6>
+        <h1>@Model.Title</h1>
     </div>
     <div class="blogBody">
-        @Html.Raw(Model.body)
+        @Html.Raw(Model.Body)
     </div>
 </div>
 
 <div class="recommendBox">
     <h3 class="textCenter">Recommend</h3>
     <div class="floatLeft">
-        @if (Model.previous.Title != null)
+        @if (Model.Previous.Title != null)
         {
             <div class="recommendBoxArrowMargin">
                 <img class="floatLeft" src="~/images/left.png" style="width: 20px; height:20px;" />
                 <h6 class="floatLeft">Previous</h6>
             </div>
             <div>
-                <a href=@Url.Action("BlogDetail", "Blog", new { id = Model.previous.Id })>
-                    <img src="@Model.previous.Thumbnail" class="imageFullSize" />
-                    <div class="textDecorationNone">@Model.previous.Title</div>
+                <a href=@Url.Action("BlogDetail", "Blog", new { id = Model.Previous.Id })>
+                    <img src="@Model.Previous.Thumbnail" class="imageFullSize" />
+                    <div class="textDecorationNone">@Model.Previous.Title</div>
                 </a>
             </div>
         }
     </div>
     <div class="floatRight giveWidth">
-        @if (Model.next.Title != null)
+        @if (Model.Next.Title != null)
         {
             <div class="recommendBoxArrowMargin">
                 <img class="floatRight" src="~/images/right.png" style="width:20px; height:20px;" />
                 <h6 class="floatRight">Next</h6>
             </div>
             <div>
-                <a href=@Url.Action("BlogDetail", "Blog", new { id = Model.next.Id })>
-                    <img src="@Model.next.Thumbnail" class="imageFullSize " />
-                    <div class="textDecorationNone">@Model.next.Title</div>
+                <a href=@Url.Action("BlogDetail", "Blog", new { id = Model.Next.Id })>
+                    <img src="@Model.Next.Thumbnail" class="imageFullSize " />
+                    <div class="textDecorationNone">@Model.Next.Title</div>
                 </a>
             </div>
         }

@@ -3,4 +3,4 @@ DatabaseConnection.cs
 *.sql
 Setup/
 
-appsettings.json
+*.json
