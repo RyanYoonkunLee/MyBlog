@@ -30,6 +30,13 @@ float-l{
     margin-top: 5%;
 }
 
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .mainbannerbox {
     padding-top: 15%;
     padding-bottom: 15%;
@@ -307,7 +314,15 @@ thead {
 .icon-width {
     margin-right: 10%;
 }
+.slider {
+    display: none;
+    opacity: 1;
+}
 
+.Jslider {
+    display: none;
+    opacity: 1;
+}
 .copy {
     margin-top: 15%;
 }
@@ -342,6 +357,34 @@ thead {
     }
     .mobile-video{
         display:block;
+    }
+}
+
+
+.fade1 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
     }
 }
 

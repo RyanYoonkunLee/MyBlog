@@ -73,4 +73,63 @@
 		);
 	}
 
+	var index = 0;
+
+	imageSlider();
+
+	function imageSlider() {
+		var slide = document.getElementsByClassName('slider');
+
+		for (var i = 0; i < slide.length; i++) {
+			slide[i].style.display = "none";
+		}
+		
+		slide[index].style.display = "block";
+		slide[index].classList.add("show");
+
+		if (index == 0) {
+			slide[slide.length - 1].classList.remove("show");
+		}
+		else {
+			slide[index - 1].classList.remove("show");
+		}
+		
+		index++
+		if (index == slide.length) {
+			index = 0;
+		}
+
+		setTimeout(imageSlider, 5000);
+
+	}
+	var jIndex = 0;
+	jqueryImageSlider()
+	function jqueryImageSlider() {
+
+		var element = $('.Jslider');
+
+		$(element).each(function () {
+			$(this).css({ display: "none" });
+		});
+		$(element).eq(index).css({ display: "block" });
+		$(element).eq(index).addClass("show");
+
+		if (index == 0) {
+			$(element).eq($(element).length -1).removeClass("show");
+		}
+		else {
+			$(element).eq(jIndex - 1).removeClass("show");
+		}
+
+		jIndex++
+		if (index == $(element).lengthh) {
+			jIndex = 0;
+		}
+
+		setTimeout(jqueryImageSlider, 5000);
+
+	}
 });
+
+
+

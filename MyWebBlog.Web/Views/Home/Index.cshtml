@@ -29,16 +29,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse navtextstyle">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark navcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
+                            <a class="nav-link text-dark navcolor" href="~/Home/Index/#aboutme">ABOUT ME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark navcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">ABOUT ME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark navcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">PROJECTS</a>
+                            <a class="nav-link text-dark navcolor" href="~/Home/Index/#project">PROJECTS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark navcolor" asp-area="" asp-controller="Blog" asp-action="Index">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark navcolor" href="~/Home/Index/#contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
             </a>
         </div>
     </section>
-    <section class="fullpage aboutme" id="aboutme">
+    <section class="fullpage aboutme center-box" id="aboutme">
         <div class="border-left-box-aboutme">
             <div class="width-40 float-left about-title-box">
                 <h1 class="bebas-font abouttitle">About Me</h1>
@@ -75,8 +75,8 @@
             </div>
         </div>
     </section>
-    <section class="fullpage tech ">
-        <div class="border-left-box-tech">
+    <section class="fullpage tech center-box">
+        <div class="border-left-box-tech width-100">
             <div class="width-40 float-left about-title-box">
                 <h1 class="bebas-font abouttitle">TECHNICAL SKILLS</h1>
             </div>
@@ -131,7 +131,7 @@
             </div>
         </div>
     </section>
-    <div class="fullpage project ">
+    <div class="fullpage project " id="project">
         <div class="border-left-box-aboutme">
             <h1 class="bebas-font projecttitle">PROJECT</h1>
             <div class="project-item">
@@ -150,7 +150,11 @@
                     <a class="project-button" href="https://www.healthup.co.nz" target="_blank">CLICK HERE TO VIEW</a>
                 </div>
                 <div class="width-60 float-left about-title-box">
-                    <img class="width-100" lazy src="~/images/mainpage/portfolio/healthup.jpg" />
+                    <img class="slider width-100 fade1" lazy src="~/images/mainpage/portfolio/healthup.jpg" />
+                    <img class="slider width-100 fade1" lazy src="~/images/mainpage/portfolio/cindy.jpg" />
+                    <img class="slider width-100 fade1" lazy src="~/images/mainpage/portfolio/healthup.jpg" />
+                    <img class="slider width-100 fade1" lazy src="~/images/mainpage/portfolio/cindy.jpg" />
+                    <img class="slider width-100 fade1" lazy src="~/images/mainpage/portfolio/healthup.jpg" />
                 </div>
             </div>
             <div class="project-item">
@@ -168,12 +172,16 @@
                     <a class="project-button" href="https://www.cindyjeon.com" target="_blank">CLICK HERE TO VIEW</a>
                 </div>
                 <div class="width-60 float-left about-title-box">
-                    <img class="width-100" lazy src="~/images/mainpage/portfolio/cindy.jpg" />
+                    <img class="Jslider width-100 fade1" lazy src="~/images/mainpage/portfolio/healthup.jpg" />
+                    <img class="Jslider width-100 fade1" lazy src="~/images/mainpage/portfolio/cindy.jpg" />
+                    <img class="Jslider width-100 fade1" lazy src="~/images/mainpage/portfolio/healthup.jpg" />
+                    <img class="Jslider width-100 fade1" lazy src="~/images/mainpage/portfolio/cindy.jpg" />
+                    <img class="Jslider width-100 fade1" lazy src="~/images/mainpage/portfolio/healthup.jpg" />
                 </div>
             </div>
         </div>
     </div>
-    <section class="fullpage contact">        
+    <section class="fullpage contact center-box" id="contact">        
         <div class="width-50 floatleft contact-box">
             <h1 class="bebas-font contact-title">Contact</h1>
             <div class="width-100 contact-detail-box">
