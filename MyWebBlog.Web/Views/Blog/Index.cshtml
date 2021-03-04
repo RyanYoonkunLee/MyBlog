@@ -16,10 +16,16 @@
         <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse navtextstyle">
             <ul class="navbar-nav flex-grow-1">
                 <li class="nav-item">
-                    <a class=" blognavcolor" id="home" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    <a class="nav-link text-dark blognavcolor" href="~/#aboutme">ABOUT ME</a>
                 </li>
                 <li class="nav-item">
-                    <a class=" blognavcolor blog" asp-area="" asp-controller="Blog" asp-action="Index">Blog</a>
+                    <a class="nav-link text-dark blognavcolor" href="~/#project">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark blognavcolor blog" asp-area="" asp-controller="Blog" asp-action="Index">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark blognavcolor" href="~/#contact">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -30,16 +36,19 @@
     <h3>Ryan's Development Note</h3>
 </div>
 
-@foreach (var item in Model)
-{
-    <div class="shadow blogBox">
-        <a class="blogboxtext" href=@Url.Action("BlogDetail", "Blog", new { @id = item.Id })>
-            <img src=@item.Thumbnail style="width: 100%; height: auto;">
-            <p>@item.Author | @item.Date</p>
-            <h3>@item.Title</h3>
-        </a>
-        <div>
-            <a href=@Url.Action("BlogDetail", "Blog", new { @id = item.Id })>Read More</a>
+<div class="overflow-hidden">
+    @foreach (var item in Model)
+    {
+        <div class="shadow blogBox">
+            <a class="blogboxtext" href=@Url.Action("BlogDetail", "Blog", new { @id = item.Id })>
+                <img src=@item.Thumbnail style="width: 100%; height: auto;">
+                <p>@item.Author | @item.Date</p>
+                <h5>[ @item.Language ]</h5>
+                <h3> @item.Title</h3>
+            </a>
+            <div class="read-more">
+                <a class="read-more-text" href=@Url.Action("BlogDetail", "Blog", new { @id = item.Id })>Read More</a>
+            </div>
         </div>
-    </div>
-}
+    }
+</div>

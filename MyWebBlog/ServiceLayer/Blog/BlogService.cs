@@ -52,6 +52,7 @@ namespace MyWebBlog.ServiceLayer.Blog
             blogDetailModel.Id = data.Id;
             blogDetailModel.Writer = data.Writer;
             blogDetailModel.Title = data.Title;
+            blogDetailModel.Language = data.Language;
             blogDetailModel.Body = data.Body;
             blogDetailModel.Date = data.Date.ToString("dd/MM/yyyy");
             
@@ -65,6 +66,7 @@ namespace MyWebBlog.ServiceLayer.Blog
             blogDetailModel.Writer = data.Writer;
             blogDetailModel.Title = data.Title;
             blogDetailModel.Body = data.Body;
+            blogDetailModel.Language = data.Language;
             blogDetailModel.Date = data.Date.ToString("dd/MM/yyyy");
             blogDetailModel.Previous = new BlogDetailRecommend();
             blogDetailModel.Next = new BlogDetailRecommend();
@@ -73,7 +75,7 @@ namespace MyWebBlog.ServiceLayer.Blog
             blogDetailModel.Previous.Thumbnail = previous.Thumbnail;
             blogDetailModel.Next.Id = next.Id;
             blogDetailModel.Next.Title = next.Title;
-            blogDetailModel.Next.Thumbnail = "/Thumbnail/" + next.Thumbnail;
+            blogDetailModel.Next.Thumbnail = next.Thumbnail;
             return blogDetailModel;
         }
 
@@ -83,7 +85,8 @@ namespace MyWebBlog.ServiceLayer.Blog
             blogListViewModel.Id = data.Id;
             blogListViewModel.Author = data.Writer;
             blogListViewModel.Title = data.Title;
-            blogListViewModel.Thumbnail = "/Thumbnail/" + data.Thumbnail;
+            blogListViewModel.Language = data.Language;
+            blogListViewModel.Thumbnail = data.Thumbnail;
            DateTime localDate = DateTime.Now;
             if (data.Date.Date == localDate.Date)
             {

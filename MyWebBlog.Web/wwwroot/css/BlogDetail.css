@@ -5,6 +5,7 @@
     background-size: 100% auto;
     padding-top:300px;
     padding-bottom: 20px;
+    color: white;
 }
 .blogBody {
     background-color: #fbfbfb;
@@ -53,3 +54,9 @@
     color:black;
 }
 
+.titlelang {
+    background: none;
+    color: yellow;
+    border: none;
+    text-align: center;
+}

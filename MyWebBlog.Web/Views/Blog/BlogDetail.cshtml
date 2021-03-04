@@ -4,9 +4,38 @@
 }
 <link href="~/css/BlogDetail.css" rel="stylesheet" />
 <link href="~/css/prism.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="~/js/blog.js"></script>
+
 <div>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white navstyle">
+        <div class="container-fluid">
+            <a class="navbar-brand navcolor naviconbox" asp-area="" asp-controller="Home" asp-action="Index"> RYAN LEE  |  <img class="nameicon" src="~/images/mainpage/icon/idea2.png" /> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse navtextstyle">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark navcolor" href="~/#aboutme">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark navcolor" href="~/#project">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark navcolor" asp-area="" asp-controller="Blog" asp-action="Index">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark navcolor" href="~/#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="title">
         <h6 class="titleDetail">@Model.Writer | @Model.Date</h6>
+        <input class="titlelang" disabled id="imageSelect" value=@Model.Language />
         <h1>@Model.Title</h1>
     </div>
     <div class="blogBody">
