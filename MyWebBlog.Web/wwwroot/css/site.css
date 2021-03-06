@@ -74,10 +74,6 @@ html {
 }
 
 
-a.nav-link:link, a.nav-link:hover {
-    color: white !important;
-    text-decoration:none;
-}
 .navtextstyle {
     margin-left: 10%;
 }

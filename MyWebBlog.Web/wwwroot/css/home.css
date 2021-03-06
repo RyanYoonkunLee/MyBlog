@@ -63,7 +63,7 @@ float-l{
 }
 
 a.nav-link:link, a.nav-link:hover {
-    color: white !important;
+    color: yellow !important;
     text-decoration: none;
 }
 
@@ -258,6 +258,14 @@ thead {
     overflow: hidden;
     margin-bottom: 7%;
 }
+.project-title-box {
+    display: block;
+    padding: 1%;
+    padding-left: 7%;
+}
+.m-project-title-box {
+    display: none;
+}
 .project-item-title {
     font-size: 2.5vw;
     font-weight: bold;
@@ -322,6 +330,9 @@ thead {
 .copy {
     margin-top: 15%;
 }
+.m-copy{
+    display:none;
+}
 .download-icon {
     width: 25%;
 }
@@ -384,3 +395,144 @@ thead {
     }
 }
 
+@media(max-width: 1200px){
+    .about-title-box{
+        width:100%
+    }
+
+    .bannerarrowbox {
+        top: 12%;
+        left: 40%;
+    }
+    .m-aboutme {
+        margin-bottom: 10%;
+    }
+}
+
+@media(min-width: 601px) and (max-width:1199px) {
+    .abouttitle {
+        font-size: 10vw;
+    }
+
+    .changetext {
+        font-size: 4vw;
+    }
+
+    .about-text-title {
+        font-size: 4vw;
+    }
+
+    .abouttext {
+        font-size: 3vw;
+    }
+
+    .tech-title-box{
+        width:100%;
+    }
+
+    .techtext {
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 320px) and (max-width:600px){
+    .abouttitle {
+        font-size: 13vw;
+    }
+
+    .projecttitle {
+        font-size: 13vw;
+    }
+
+    .changetext {
+        font-size: 6vw;
+    }
+
+    .about-text-title {
+        font-size: 6vw;
+    }
+
+    .abouttext {
+        font-size: 4vw;
+    }
+
+    .tech-title-box {
+        width: 100%;
+    }
+
+    .techtext {
+        font-size: 5vw;
+    }
+    .progress {
+        height: 10px;
+    }
+
+    .m-project-title-box {
+        display: block;
+        padding: 1%;
+        padding-left: 7%;
+        width: 100%;
+    }
+    .project-title-box {
+        display: none;
+    }
+
+    .center-box {
+        display: block;
+    }
+
+    .contact-title {
+        font-size: 13vw;
+    }
+    .contact-name {
+        font-size: 5.5vw;
+        margin-bottom: 20px;
+    }
+    .contact-text {
+        font-size: 4.5vw;
+    }
+
+    .copy{
+        display: none;
+    }
+    .m-copy {
+        display: block;
+        text-align: center;
+    }
+
+    .contact-textbox {
+        font-size: 3.5vw;
+    }
+
+    .contact-box{
+        width:100%;
+    }
+    .email-form {
+        width: 100%;
+    }
+
+    .project-item-title {
+        font-size: 5.5vw;
+        margin-top: 10px;
+        text-align:center;
+    }
+
+    .project-item-text {
+        font-size: 3.5vw;
+        margin-bottom: 15%;
+    }
+    .project-button {
+        padding: 2%;
+    }
+
+    .project-button-box {
+        text-align: center;
+        margin-bottom: 15%;
+    }
+}
+
+@media(max-width:800px){
+    section{
+        height:auto;
+    }
+}

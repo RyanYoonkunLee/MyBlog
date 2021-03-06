@@ -55,7 +55,7 @@
         </div>
     </section>
     <section class="fullpage aboutme center-box" id="aboutme">
-        <div class="border-left-box-aboutme">
+        <div class="border-left-box-aboutme m-aboutme">
             <div class="width-40 float-left about-title-box">
                 <h1 class="bebas-font abouttitle">About Me</h1>
                 <h3 class="changetext mt5 opensance-font">I am a <span id="changing_text"></span></h3>
@@ -135,6 +135,10 @@
         <div class="border-left-box-aboutme">
             <h1 class="bebas-font projecttitle">PROJECT</h1>
             <div class="project-item">
+                <div class="width-60 float-left m-project-title-box">
+                    <img class="slider width-100 fade1" lazy src="~/images/mainpage/portfolio/healthup.jpg" />
+                    <img class="slider width-100 fade1" lazy src="~/images/mainpage/portfolio/m_healthup.jpg" />
+                </div>
                 <div class="width-40 float-left about-title-box opensance-font">
                     <h1 class="project-item-title">Health Up Limited</h1>
                     <div class="project-item-text">
@@ -147,14 +151,19 @@
                         <p>Entity Framework</p>
                         <p>MS SQL</p>
                     </div>
-                    <a class="project-button" href="https://www.healthup.co.nz" target="_blank">CLICK HERE TO VIEW</a>
+                    <div class="project-button-box">
+                        <a class="project-button" href="https://www.healthup.co.nz" target="_blank">CLICK HERE TO VIEW</a>
+                    </div>
                 </div>
-                <div class="width-60 float-left about-title-box">
+                <div class="width-60 float-left project-title-box">
                     <img class="slider width-100 fade1" lazy src="~/images/mainpage/portfolio/healthup.jpg" />
                     <img class="slider width-100 fade1" lazy src="~/images/mainpage/portfolio/m_healthup.jpg" />
                 </div>
             </div>
             <div class="project-item">
+                <div class="width-60 float-left m-project-title-box">
+                    <img class="width-100" lazy src="~/images/mainpage/portfolio/cindy.jpg" />
+                </div>
                 <div class="width-40 float-left about-title-box opensance-font">
                     <h1 class="project-item-title">Cindy Jeon:</h1>
                     <h1 class="project-item-title">Stay Creative</h1>
@@ -166,15 +175,17 @@
                         <p>Json (store file path)</p>
                         <p>Netlify (deploy)</p>
                     </div>
-                    <a class="project-button" href="https://www.cindyjeon.com" target="_blank">CLICK HERE TO VIEW</a>
+                    <div class="project-button-box">
+                        <a class="project-button" href="https://www.cindyjeon.com" target="_blank">CLICK HERE TO VIEW</a>
+                    </div>
                 </div>
-                <div class="width-60 float-left about-title-box">
+                <div class="width-60 float-left project-title-box">
                     <img class="width-100" lazy src="~/images/mainpage/portfolio/cindy.jpg" />
                 </div>
             </div>
         </div>
     </div>
-    <section class="fullpage contact center-box" id="contact">        
+    <section class="fullpage contact center-box" id="contact">
         <div class="width-50 floatleft contact-box">
             <h1 class="bebas-font contact-title">Contact</h1>
             <div class="width-100 contact-detail-box">
@@ -182,22 +193,24 @@
                 <h4 class="opensance-font contact-text"><strong>P:</strong> 021 035 0546</h4>
                 <p4 class="opensance-font contact-text"><strong>E:</strong> ryan:yoonkun.lee@gmail.com</p4>
             </div>
-            <a class="download-icon" href="~/Download/Ryan Lee Resume 2021.pdf" download="Ryan_Resume"><img class="width-15 icon-width" src="~/images/mainpage/icon/CV.png"/></a>
+            <a class="download-icon" href="~/Download/Ryan Lee Resume 2021.pdf" download="Ryan_Resume"><img class="width-15 icon-width" src="~/images/mainpage/icon/CV.png" /></a>
             <a class="download-icon" href="https://www.linkedin.com/in/yoonkun-ryan-lee/" target="_blank"><img class="width-15 icon-width" src="~/images/mainpage/icon/Linkedin.png" /></a>
             <a class="download-icon" href="https://github.com/RyanYoonkunLee" target="_blank"><img class="width-15 icon-width" src="~/images/mainpage/icon/github.png" /></a>
-            <p class="copy">Copyright <script>document.write(new Date().getFullYear())</script> Ryan Lee</p>
+            <p class="copy">Copyright
+            <script>document.write(new Date().getFullYear())</script> Ryan Lee</p>
         </div>
         <div class="width-50 floatleft email-form">
-            @using(Html.BeginForm("SendEmail", "Home", FormMethod.Post))
+            @using (Html.BeginForm("SendEmail", "Home", FormMethod.Post))
             {
-                @Html.LabelFor(m => m.Name, new { @class="width-100 contact-text" })
-                @Html.TextBoxFor(m => m.Name, new { @class="width-90 contact-textbox" })
-                @Html.LabelFor(m =>m.SenderEmail, new { @class="width-100 contact-text" })
-                @Html.TextBoxFor(m=>m.SenderEmail, new { @class="width-90 contact-textbox" })
-                @Html.LabelFor(m=>m.Message, new { @class="width-100 contact-text" })
-                @Html.TextAreaFor(m=>m.Message, new { @class="width-90 contact-textbox", rows="7"})
+                @Html.LabelFor(m => m.Name, new { @class = "width-100 contact-text" })
+                @Html.TextBoxFor(m => m.Name, new { @class = "width-90 contact-textbox" })
+                @Html.LabelFor(m => m.SenderEmail, new { @class = "width-100 contact-text" })
+                @Html.TextBoxFor(m => m.SenderEmail, new { @class = "width-90 contact-textbox" })
+                @Html.LabelFor(m => m.Message, new { @class = "width-100 contact-text" })
+                @Html.TextAreaFor(m => m.Message, new { @class = "width-90 contact-textbox", rows = "7" })
             }
             <button class="contact-button" type="submit">SEND</button>
         </div>
+        <p class="m-copy">Copyright<script>document.write(new Date().getFullYear())</script> Ryan Lee</p>
     </section>
 </div>
