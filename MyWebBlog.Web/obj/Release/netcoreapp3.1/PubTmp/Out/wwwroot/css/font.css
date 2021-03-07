@@ -1,0 +1,21 @@
+﻿@font-face{
+    font-family: 'Bebas';
+    src:url(../font/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family:'OpenSance';
+    src:url(../font/OpenSans-Regular.ttf);
+}
+
+.bebas-font{
+    font-family: Bebas;
+}
+
+.opensance-font{
+    font-family:OpenSance;
+}
+
+p{
+    font-family:OpenSance;
+}

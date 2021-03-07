@@ -1,0 +1,1757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGhEHWUAdlE+VGJLmjSx11QAAAAACAAAAAAAQZgAAAAEAACAAAAD8wOz/rGEqscwR4Z00if9NY9DXNlfCtyGAvW0EdQPaPgAAAAAOgAAAAAIAACAAAADs8WnLhoc2Z2Fi1Adv9fOslIDo87EvpqAeuy+Qmk6SRiAAAACFmggyDGCyl+H3USRnyJPV+4wmO0Q4dIvaXBXmXSv/xkAAAACeZm/rKaLKb//mbz9gL5sul0TTSAuK5+k6hyNGINgJ6qWp+4WqUssMo+XcyH7NC+GbTkAadhngs+zBTj0WGlxT</EncryptedPassword>
+    <_PublishTargetUrl>ftp://122.201.126.201/httpdocs/MyWebBlog.Web</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>02/19/2021 16:59:25</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:08:58</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:12</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:46</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="Dapper.dll">
+      <publishTime>04/05/2020 12:46:06</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:08:58</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:12</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:46</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>02/09/2021 21:12:02</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:12</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:46</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:12</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:46</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:12</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:46</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:12</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:46</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:12</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:46</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.Google.dll">
+      <publishTime>10/21/2020 00:12:02</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Razor.Language.dll">
+      <publishTime>11/16/2019 06:08:46</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>09/12/2019 17:08:58</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>09/12/2019 17:09:12</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.dll">
+      <publishTime>09/12/2019 17:07:46</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Razor.dll">
+      <publishTime>11/16/2019 06:08:52</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>09/12/2019 17:08:34</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.BrowserLink.dll">
+      <publishTime>11/12/2018 17:30:38</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>02/09/2021 21:11:34</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>02/09/2021 21:11:44</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>02/09/2021 21:11:52</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>02/09/2021 21:11:50</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>02/09/2021 21:11:42</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>02/09/2021 21:11:40</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>02/09/2021 21:11:52</publishTime>
+    </File>
+    <File Include="MyWebBlog.Data.Sql.dll">
+      <publishTime>03/07/2021 22:17:13</publishTime>
+    </File>
+    <File Include="MyWebBlog.Data.Sql.exe">
+      <publishTime>03/07/2021 22:17:13</publishTime>
+    </File>
+    <File Include="MyWebBlog.Data.Sql.pdb">
+      <publishTime>03/07/2021 22:17:13</publishTime>
+    </File>
+    <File Include="MyWebBlog.dll">
+      <publishTime>03/07/2021 22:17:12</publishTime>
+    </File>
+    <File Include="MyWebBlog.exe">
+      <publishTime>03/07/2021 22:17:12</publishTime>
+    </File>
+    <File Include="MyWebBlog.pdb">
+      <publishTime>03/07/2021 22:17:12</publishTime>
+    </File>
+    <File Include="MyWebBlog.Web.deps.json">
+      <publishTime>03/07/2021 22:59:51</publishTime>
+    </File>
+    <File Include="MyWebBlog.Web.dll">
+      <publishTime>03/07/2021 22:59:50</publishTime>
+    </File>
+    <File Include="MyWebBlog.Web.exe">
+      <publishTime>03/07/2021 22:59:50</publishTime>
+    </File>
+    <File Include="MyWebBlog.Web.pdb">
+      <publishTime>03/07/2021 22:59:50</publishTime>
+    </File>
+    <File Include="MyWebBlog.Web.runtimeconfig.json">
+      <publishTime>03/07/2021 22:17:17</publishTime>
+    </File>
+    <File Include="MyWebBlog.Web.Views.dll">
+      <publishTime>03/07/2021 22:59:51</publishTime>
+    </File>
+    <File Include="MyWebBlog.Web.Views.pdb">
+      <publishTime>03/07/2021 22:59:51</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>03/24/2018 17:44:14</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>04/24/2018 21:27:10</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:12</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:48</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:14</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:48</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:14</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:48</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>07/20/2020 21:33:18</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/sni.dll">
+      <publishTime>07/12/2017 11:24:24</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/sni.dll">
+      <publishTime>07/12/2017 11:24:22</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/sni.dll">
+      <publishTime>07/12/2017 11:24:22</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>07/20/2020 21:33:24</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>11/05/2016 04:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>11/05/2016 04:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>11/05/2016 04:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>11/05/2016 04:55:44</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>11/05/2016 04:55:46</publishTime>
+    </File>
+    <File Include="System.Data.SqlClient.dll">
+      <publishTime>07/20/2020 21:21:14</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:14</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:48</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>03/07/2021 22:59:54</publishTime>
+    </File>
+    <File Include="wwwroot/css/BlogDetail.css">
+      <publishTime>03/07/2021 21:57:39</publishTime>
+    </File>
+    <File Include="wwwroot/css/BlogList.css">
+      <publishTime>03/05/2021 15:47:35</publishTime>
+    </File>
+    <File Include="wwwroot/css/font.css">
+      <publishTime>03/01/2021 14:58:06</publishTime>
+    </File>
+    <File Include="wwwroot/css/home.css">
+      <publishTime>03/07/2021 21:43:45</publishTime>
+    </File>
+    <File Include="wwwroot/css/prism.css">
+      <publishTime>11/09/2020 14:03:46</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>03/05/2021 15:45:45</publishTime>
+    </File>
+    <File Include="wwwroot/Download/Ryan Lee Resume 2021.pdf">
+      <publishTime>03/01/2021 09:20:48</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/font/BebasNeue-Regular.ttf">
+      <publishTime>10/16/2019 00:00:00</publishTime>
+    </File>
+    <File Include="wwwroot/font/OpenSans-Bold.ttf">
+      <publishTime>02/02/2011 00:00:00</publishTime>
+    </File>
+    <File Include="wwwroot/font/OpenSans-ExtraBold.ttf">
+      <publishTime>02/02/2011 00:00:00</publishTime>
+    </File>
+    <File Include="wwwroot/font/OpenSans-Light.ttf">
+      <publishTime>02/02/2011 00:00:00</publishTime>
+    </File>
+    <File Include="wwwroot/font/OpenSans-Regular.ttf">
+      <publishTime>02/02/2011 00:00:00</publishTime>
+    </File>
+    <File Include="wwwroot/font/OpenSans-SemiBold.ttf">
+      <publishTime>02/02/2011 00:00:00</publishTime>
+    </File>
+    <File Include="wwwroot/images/blog/1.jpg">
+      <publishTime>03/05/2021 16:21:09</publishTime>
+    </File>
+    <File Include="wwwroot/images/blog/12.jpg">
+      <publishTime>03/04/2021 11:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/images/blog/blogbanner.jpg">
+      <publishTime>02/15/2021 13:28:35</publishTime>
+    </File>
+    <File Include="wwwroot/images/language/csharp.jpg">
+      <publishTime>03/05/2021 16:21:09</publishTime>
+    </File>
+    <File Include="wwwroot/images/language/jquery.png">
+      <publishTime>03/07/2021 21:54:48</publishTime>
+    </File>
+    <File Include="wwwroot/images/left.png">
+      <publishTime>10/19/2020 16:24:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/aboutme/changetext.jpg">
+      <publishTime>02/25/2021 15:22:20</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/aboutme/Group 9.png">
+      <publishTime>02/28/2021 21:29:50</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/banner1.jpg">
+      <publishTime>02/15/2021 13:28:40</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/banner2.jpg">
+      <publishTime>02/15/2021 13:28:41</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/banner3.png">
+      <publishTime>07/28/2020 11:41:27</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/down-arrow.png">
+      <publishTime>02/19/2021 12:00:54</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/icon/CV.png">
+      <publishTime>03/01/2021 02:31:22</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/icon/github.png">
+      <publishTime>03/01/2021 16:34:45</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/icon/idea2.png">
+      <publishTime>02/16/2021 19:44:40</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/icon/Linkedin.png">
+      <publishTime>03/01/2021 02:31:30</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/portfolio/cindy.jpg">
+      <publishTime>03/04/2021 10:11:23</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/portfolio/healthup.jpg">
+      <publishTime>03/04/2021 09:50:50</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/portfolio/m_healthup.jpg">
+      <publishTime>03/04/2021 09:58:13</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/techskill/Group 4.png">
+      <publishTime>02/28/2021 22:53:42</publishTime>
+    </File>
+    <File Include="wwwroot/images/mainpage/techskill/Group 5.png">
+      <publishTime>02/28/2021 22:53:30</publishTime>
+    </File>
+    <File Include="wwwroot/images/MOBILE-Neon-Lines.mp4">
+      <publishTime>02/16/2021 16:11:57</publishTime>
+    </File>
+    <File Include="wwwroot/images/mylivewallpapers.com-Neon-Lines.mp4">
+      <publishTime>02/16/2021 16:15:52</publishTime>
+    </File>
+    <File Include="wwwroot/images/right.png">
+      <publishTime>10/19/2020 16:25:25</publishTime>
+    </File>
+    <File Include="wwwroot/js/blog.js">
+      <publishTime>03/05/2021 18:49:35</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/adapters/jquery.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/build-config.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/CHANGES.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/ckeditor.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/config.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/contents.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/lang/en.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/LICENSE.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/af.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/az.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/da.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/de.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/el.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/en.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/es.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/et.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/he.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/id.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/it.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/km.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/no.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/si.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/th.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/about/dialogs/about.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/about/dialogs/logo_ckeditor.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/clipboard/dialogs/paste.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/css/codemirror.min.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/images/autocomplete.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/images/autoformat.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/images/commentselectedrange.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/images/searchcode.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/images/uncommentselectedrange.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/beautify.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/codemirror.addons.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/codemirror.addons.search.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/codemirror.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/codemirror.mode.bbcode.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/codemirror.mode.bbcodemixed.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/codemirror.mode.handlebars.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/codemirror.mode.htmlmixed.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/codemirror.mode.javascript.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/codemirror.mode.php.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/js/codemirror.mode.twig.min.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/3024-day.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/3024-night.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/abcdef.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/ambiance-mobile.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/ambiance.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/base16-dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/base16-light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/bespin.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/blackboard.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/cobalt.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/colorforth.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/darcula.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/dracula.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/duotone-dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/duotone-light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/eclipse.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/elegant.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/erlang-dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/gruvbox-dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/hopscotch.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/icecoder.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/idea.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/isotope.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/lesser-dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/liquibyte.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/lucario.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/material.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/mbo.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/mdn-like.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/midnight.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/monokai.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/neat.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/neo.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/night.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/nord.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/oceanic-next.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/panda-syntax.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/paraiso-dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/paraiso-light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/pastel-on-dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/railscasts.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/rubyblue.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/seti.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/shadowfox.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/solarized.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/ssms.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/the-matrix.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/tomorrow-night-bright.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/tomorrow-night-eighties.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/ttcn.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/twilight.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/vibrant-ink.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/xq-dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/xq-light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/yeti.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/yonce.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codemirror/theme/zenburn.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/dialogs/codesnippet.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/CHANGES.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/LICENSE">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/README.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/README.ru.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/arta.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/ascetic.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/brown_paper.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/brown_papersq.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/docco.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/far.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/foundation.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/github.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/googlecode.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/idea.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/ir_black.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/magula.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/mono-blue.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/obsidian.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/pojoaque.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/pojoaque.jpg">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/railscasts.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/rainbow.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/school_book.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/school_book.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_dark.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_light.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/sunburst.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-blue.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-bright.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-eighties.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/vs.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/xcode.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codesnippet/lib/highlight/styles/zenburn.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/codeTag/README.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/dialog/dialogDefinition.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/dialog/styles/dialog.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/icons.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/icons_hidpi.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/image/dialogs/image.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/image/images/noimage.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/link/dialogs/anchor.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/link/dialogs/link.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/link/images/anchor.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/link/images/hidpi/anchor.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/magicline/images/hidpi/icon.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/magicline/images/icon-rtl.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/magicline/images/icon.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/pastefromgdocs/filter/default.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/pastefromword/filter/default.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/pastetools/filter/common.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/pastetools/filter/image.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/pbckcode/CHANGELOG.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/pbckcode/dialogs/pbckcode.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/pbckcode/dialogs/PBSyntaxHighlighter.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/pbckcode/dialogs/style.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/pbckcode/LICENSE">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/pbckcode/README.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/scayt/CHANGELOG.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/scayt/dialogs/dialog.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/scayt/dialogs/options.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/scayt/dialogs/toolbar.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/scayt/LICENSE.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/scayt/README.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/af.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/ar.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/az.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/bg.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/ca.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/cs.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/cy.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/da.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/de.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/el.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/en-au.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/en.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/eo.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/es.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/et.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/eu.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/fa.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/fi.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/fr.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/gl.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/he.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/hr.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/hu.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/id.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/it.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/ja.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/km.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/ko.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/ku.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/lt.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/lv.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/nb.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/nl.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/no.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/oc.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/pl.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/pt.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/ro.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/ru.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/si.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/sk.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/sl.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/sq.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/sr-latn.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/sr.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/sv.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/th.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/tr.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/tt.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/ug.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/uk.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/vi.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/zh.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/specialchar/dialogs/specialchar.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/table/dialogs/table.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/tableselection/styles/tableselection.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/tabletools/dialogs/tableCell.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/widget/images/handle.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/wsc/dialogs/ciframe.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/wsc/dialogs/tmpFrameset.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/wsc/dialogs/wsc.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/wsc/dialogs/wsc.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/wsc/dialogs/wsc_ie.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/wsc/LICENSE.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/wsc/README.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/youtube/images/icon-hdpi.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/plugins/youtube/images/icon.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/README.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/css/samples.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/img/github-top.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/img/header-bg.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/img/header-separator.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/img/logo.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/img/logo.svg">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/img/navigation-tip.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/index.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/js/sample.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/js/sf.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/ajax.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/api.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/appendto.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/assets/inlineall/logo.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/assets/posteddata.php">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/assets/sample.jpg">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/assets/uilanguages/languages.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/codemirror/XmlAutoComplete.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/codesnippet/codesnippet.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/datafiltering.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/dialog/assets/my_dialog.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/dialog/dialog.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/divreplace.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/enterkey/enterkey.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/htmlwriter/outputforflash.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/htmlwriter/outputhtml.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/index.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/inlineall.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/inlinebycode.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/inlinetextarea.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/jquery.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/magicline/magicline.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/readonly.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/replacebyclass.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/replacebycode.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/sample.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/sample.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/sample_posteddata.php">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/tabindex.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/toolbar/toolbar.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/uicolor.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/uilanguages.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/wysiwygarea/fullpage.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/old/xhtmlstyle.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/css/fontello.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/font/config.json">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/font/fontello.eot">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/font/fontello.svg">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/font/fontello.ttf">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/font/fontello.woff">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/index.html">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/dialog.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/dialog_ie.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/dialog_ie8.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/dialog_iequirks.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/editor.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/editor_gecko.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/editor_ie.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/editor_ie8.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/editor_iequirks.css">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/icons.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/icons_hidpi.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/images/arrow.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/images/close.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/images/hidpi/close.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/images/hidpi/lock.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/images/hidpi/refresh.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/images/lock-open.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/images/lock.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/images/refresh.png">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/images/spinner.gif">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/skins/moono-lisa/readme.md">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/styles.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/ckeditor/vendor/promise.js">
+      <publishTime>11/09/2020 13:50:03</publishTime>
+    </File>
+    <File Include="wwwroot/js/homepage.js">
+      <publishTime>03/07/2021 21:31:50</publishTime>
+    </File>
+    <File Include="wwwroot/js/prism.js">
+      <publishTime>11/09/2020 14:03:45</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/LICENSE.md">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.js">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>10/13/2020 20:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/Thumbnail/image1.jpg">
+      <publishTime>10/19/2020 16:54:59</publishTime>
+    </File>
+    <File Include="wwwroot/Thumbnail/image2.jpg">
+      <publishTime>10/19/2020 16:55:08</publishTime>
+    </File>
+    <File Include="wwwroot/Thumbnail/image3.jpg">
+      <publishTime>10/19/2020 16:56:14</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:14</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:48</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>09/12/2019 17:09:00</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:09:14</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>09/12/2019 17:07:48</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>09/12/2019 17:08:36</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
