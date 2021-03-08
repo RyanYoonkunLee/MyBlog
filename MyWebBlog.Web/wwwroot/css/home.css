@@ -38,7 +38,7 @@ float-l{
 
 
 .mainbannerbox {
-    padding-top: 15%;
+    padding-top: 21vh;
     padding-bottom: 15%;
 }
 
@@ -469,10 +469,26 @@ thead {
 }
 
 @media(min-width: 320px) and (max-width:600px){
+    .m-home{
+        height: 100vh;
+    }
+
+    .mainbannertitle {
+        font-size: 12vw;
+    }
+    .mainbannertext {
+        font-size: 5vw;
+    }
+    .mainbannerbox {
+        padding-top: 30%;
+    }
     .abouttitle {
         font-size: 13vw;
     }
-
+    .bannerarrowbox {
+        top: 12%;
+        left: 29%;
+    }
     .projecttitle {
         font-size: 13vw;
     }
