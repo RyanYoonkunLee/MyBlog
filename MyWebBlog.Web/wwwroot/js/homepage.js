@@ -5,11 +5,11 @@
 		if (jQuery("#changing_text").length > 0) {
 			var options = {
 				strings: [
-					"Good Team Player",
+					"Software Developer",
+					"Enthusiastic",
 					"Web Developer",
 					"Logical Thinker",
-					"Debug Codes",
-					"Enthusiastic",
+					"Full-stack Developer",
 					"Positive Person"
 				],
 				typeSpeed: 30,

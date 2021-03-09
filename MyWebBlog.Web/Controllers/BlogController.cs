@@ -53,6 +53,7 @@ namespace MyWebBlog.Web.Controllers
             }
 
             var blog = blogservice.ConvertDataToDetailModel(foundBlog, previous, next);
+            blog.Thumbnail = _blog.FindLanguageImagePath(blog.Language);
             return View(blog);
         }
        

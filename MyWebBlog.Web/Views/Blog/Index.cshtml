@@ -1,7 +1,7 @@
 ﻿@model List<MyWebBlog.ViewModel.BlogListViewModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Blog";
     <link href="~/css/BlogList.css" rel="stylesheet" />
 <link href="~/css/site.css" rel="stylesheet" />
 }
@@ -36,19 +36,21 @@
     <h3>Ryan's Development Note</h3>
 </div>
 
-<div class="overflow-hidden">
+<div class="overflow-hidden blog-list-box">
     @foreach (var item in Model)
     {
         <div class="shadow blogBox">
             <a class="blogboxtext" href=@Url.Action("BlogDetail", "Blog", new { @id = item.Id })>
                 <img src=@item.Thumbnail style="width: 100%; height: auto;">
-                <p>@item.Author | @item.Date</p>
-                <h5>[ @item.Language ]</h5>
-                <h3> @item.Title</h3>
+                <div class="blog-info">
+                    <p>@item.Author | @item.Date</p>
+                    <h5>[ @item.Language ]</h5>
+                    <h3> @item.Title</h3>
+                </div>
+                <div class="read-more">
+                    <p class="read-more-text">Read More</p>
+                </div>
             </a>
-            <div class="read-more">
-                <a class="read-more-text" href=@Url.Action("BlogDetail", "Blog", new { @id = item.Id })>Read More</a>
-            </div>
         </div>
     }
 </div>

@@ -12,7 +12,7 @@ namespace MyWebBlog.ViewModel
         public string Title { get; set; }
         public string Date { get; set; }
         public string Language { get; set; }
-        public string ImagePath { get; set; }
+        public string Thumbnail { get; set; }
 
         public virtual BlogDetailRecommend Next { get; set; }
         public virtual BlogDetailRecommend Previous { get; set; }

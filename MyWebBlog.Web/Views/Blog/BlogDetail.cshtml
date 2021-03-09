@@ -8,7 +8,7 @@
 <script src="~/js/blog.js"></script>
 
 <div class="overflow-hidden">
-    <div style="background-image: url('@Model.ImagePath');">
+    <div class="blogbackground" style="background-image: url('@Model.Thumbnail');">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white navstyle">
             <div class="container-fluid">
                 <a class="navbar-brand navcolor naviconbox" asp-area="" asp-controller="Home" asp-action="Index"> RYAN LEE  |  <img class="nameicon" src="~/images/mainpage/icon/idea2.png" /> </a>
@@ -50,31 +50,30 @@
     <div class="floatLeft">
         @if (Model.Previous.Title != null)
         {
-            <div class="recommendBoxArrowMargin">
-                <img class="floatLeft" src="~/images/left.png" style="width: 20px; height:20px;" />
-                <h6 class="floatLeft">Previous</h6>
-            </div>
-            <div>
-                <a href=@Url.Action("BlogDetail", "Blog", new { id = Model.Previous.Id })>
-                    <img src="@Model.Previous.Thumbnail" class="imageFullSize" />
-                    <div class="textDecorationNone">@Model.Previous.Title</div>
-                </a>
-            </div>
+            
+
+            <a href=@Url.Action("BlogDetail", "Blog", new { id = Model.Previous.Id })>
+                <div class="recommendBoxArrowMargin">
+                    <img class="floatLeft" src="~/images/left.png" style="width: 20px; height:20px;" />
+                    <h6 class="floatLeft width-60">Previous</h6>
+                </div>
+                <img src="@Model.Previous.Thumbnail" class="imageFullSize" />
+                <div class="textDecorationNone">@Model.Previous.Title</div>
+            </a>
+
         }
     </div>
     <div class="floatRight giveWidth">
         @if (Model.Next.Title != null)
-        {
-            <div class="recommendBoxArrowMargin">
-                <img class="floatRight" src="~/images/right.png" style="width:20px; height:20px;" />
-                <h6 class="floatRight">Next</h6>
-            </div>
-            <div>
-                <a href=@Url.Action("BlogDetail", "Blog", new { id = Model.Next.Id })>
-                    <img src="@Model.Next.Thumbnail" class="imageFullSize " />
-                    <div class="textDecorationNone">@Model.Next.Title</div>
-                </a>
-            </div>
+        {            
+            <a href=@Url.Action("BlogDetail", "Blog", new { id = Model.Next.Id })>
+                <div class="recommendBoxArrowMargin">
+                    <img class="floatRight" src="~/images/right.png" style="width:20px; height:20px;" />
+                    <h6 class="floatRight">Next</h6>
+                </div>
+                <img src="@Model.Next.Thumbnail" class="imageFullSize " />
+                <div class="textDecorationNone">@Model.Next.Title</div>
+            </a>
         }
     </div>
 </div>

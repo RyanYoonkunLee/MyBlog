@@ -42,6 +42,7 @@ namespace MyWebBlog.Web.Controllers
         }
         public IActionResult SendBlogItem(BlogViewModel blog)
         {
+            blog.Thumbnail = _blog.FindLanguageImagePath(blog.Language);
             BlogDataModel newBlog = blogservice.CreateNewBlog(blog);
             _blog.Create(newBlog);
 
@@ -60,7 +61,7 @@ namespace MyWebBlog.Web.Controllers
         [Route("Admin/BlogUpdate/{id?}")]
         public IActionResult BlogUpdate(BlogViewModel blog)
         {
-
+            blog.Thumbnail = _blog.FindLanguageImagePath(blog.Language);
             var updateBlog = blogservice.CreateBlogDataModel(blog);
             updateBlog.Id = blog.Id;
             _blog.Update(updateBlog);

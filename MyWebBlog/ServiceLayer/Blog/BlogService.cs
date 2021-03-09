@@ -10,6 +10,7 @@ namespace MyWebBlog.ServiceLayer.Blog
     {       
         public BlogDataModel CreateNewBlog(BlogViewModel blog)
         {
+            
             BlogDataModel newBlog = CreateBlogDataModel(blog);
             newBlog.Id = Guid.NewGuid();
             return newBlog;

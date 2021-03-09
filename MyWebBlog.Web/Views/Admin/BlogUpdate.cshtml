@@ -22,8 +22,6 @@
     </select>
     @Html.LabelFor(m => m.Title)
     @Html.TextBoxFor(m => m.Title)
-    @Html.LabelFor(m => m.Thumbnail)
-    @Html.TextBoxFor(m => m.Thumbnail)
     @Html.LabelFor(m => m.Body)
     <textarea asp-for="Body" id="body" class="ckeditor" name="body" typeof="text"></textarea>
     <button type="submit" onclick="insert()" id="saveData">Save</button>
