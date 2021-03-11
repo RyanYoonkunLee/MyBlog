@@ -79,9 +79,9 @@ html {
 }
 
 .nav-item {
-    margin-left: 5%;
     font-size: 20px;
-    width: 15%;
+    width: 25%;
+    text-align: center;
 }
 
 .naviconbox {
@@ -97,4 +97,39 @@ html {
 
 .container-fluid{
     padding: 0px !important;
+}
+
+@media (max-width: 575px){
+    .navtextstyle {
+        z-index: 1;
+        margin-left: 0%;
+    }
+
+    .nav-item {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        background: black;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 700px){
+    .nav-link {
+        font-size: 12px;
+    }
+    .navtextstyle {
+        margin-left: 0%;
+    }
+}
+
+
+@media (min-width: 701px) and (max-width: 975px) {
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
 }

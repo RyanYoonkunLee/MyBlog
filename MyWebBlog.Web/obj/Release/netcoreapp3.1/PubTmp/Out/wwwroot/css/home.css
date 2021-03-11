@@ -30,6 +30,15 @@ float-l{
     margin-top: 5%;
 }
 
+.navbar-toggler{
+    background-color:white;
+    border-color:white;
+}
+
+a.navbar-brand:hover{
+    color:yellow !important;
+}
+
 .center-box {
     display: flex;
     justify-content: center;
@@ -365,6 +374,18 @@ thead {
     padding-left: 7%;
 }
 
+@media(min-width: 800px) and (max-width: 1050px){
+    .mainbannertitle {
+        font-size: 9vw;
+    }
+
+    .mainbannertext {
+        font-size: 3.3vw;
+    }
+}
+
+
+
 @media(max-width: 800px) {
     .desktop-video{
         display:none;
@@ -449,6 +470,7 @@ thead {
 
     .changetext {
         font-size: 4vw;
+        margin-bottom: 15%;
     }
 
     .about-text-title {
@@ -468,7 +490,7 @@ thead {
     }
 }
 
-@media(min-width: 320px) and (max-width:600px){
+@media(min-width: 320px) and (max-width:799px){
     .m-home{
         height: 100vh;
     }
@@ -494,11 +516,12 @@ thead {
     }
 
     .changetext {
-        font-size: 6vw;
+        font-size: 5vw;
+        margin-bottom: 15%;
     }
 
     .about-text-title {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     .abouttext {

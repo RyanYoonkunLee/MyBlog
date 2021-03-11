@@ -1,5 +1,4 @@
 ﻿.blogbackground {
-    background-image: url(../images/language/jquery.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,27 +19,30 @@
 .titleDetail{
     font-size:12px;
 }
-.floatLeft{
+.floatLeft {
     float: left;
-    margin-right: 15px;
-    width: 25%;
-}
-.floatRight {
-    float: right;
-    margin-left: 15px;
-    
+    margin-right: 5%;
+    width: 30%;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
-.textCenter{
+.floatRight {
+    float: right;
+    margin-left: 5%;
+}
+
+.textCenter {
     text-align: center;
+    margin-bottom: 5%;
 }
 .giveWidth {
-    width: 25%;
+    width: 30%;
 }
 
 .recommendBox {
     background-color: #e8e8e8;
-    padding: 5%;
+    padding: 4% 5% 2% 5%;
     overflow: hidden;
 }
 
@@ -57,7 +59,9 @@
 
 .textDecorationNone {
     text-decoration: none;
-    color:black;
+    text-align: center;
+    color: black;
+    font-size: 20px;
 }
 
 .titlelang {
@@ -67,4 +71,13 @@
     text-align: center;
     font-size: 20px;
     margin-bottom: 15px;
+}
+
+a.navcolor:hover{
+    color:yellow !important;
+}
+
+.navbar-toggler {
+    background-color: white;
+    border-color: white;
 }

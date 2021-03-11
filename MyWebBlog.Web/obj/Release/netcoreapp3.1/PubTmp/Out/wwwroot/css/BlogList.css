@@ -48,8 +48,57 @@ a.blogboxtext:link, a.blogboxtext:hover{
     padding: 3%;
     width: 40%;
     margin-left: 30%;
+    border: 1px solid white;
 }
 
 .read-more-text {
-    color: white
+    color: white;
+    margin-bottom: 0px;
+}
+.read-more:hover {
+    color: #35A3F4;
+    background-color: white;
+    border: 1px solid #35A3F4;
+}
+
+.read-more:hover .read-more-text {
+    color: #35A3F4;
+}
+
+.blog-list-box {
+    margin-bottom: 5%;
+    padding: 1%;
+}
+
+.blog-info {
+    width: 100%;
+    margin-bottom: 5%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    padding: 5%;
+    height: 200px;
+}
+
+@media (min-width : 600px) and (max-width: 1100px) {
+    .blogBox {
+        width: 45%;
+        margin-left: 3%;
+    }
+}
+
+@media (max-width: 599px) {
+    .blogBox {
+        width:90%;
+        margin-left:5%;
+    }
+    .bloglist {
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+}
+
+.navbar-toggler {
+    background-color: white;
+    border-color: white;
 }

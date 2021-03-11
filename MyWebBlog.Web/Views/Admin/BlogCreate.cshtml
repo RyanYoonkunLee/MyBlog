@@ -2,26 +2,36 @@
 @{
     ViewData["Title"] = "CreateBlog";
 }
+<div class="p-5">
+    <h1>Create Blog</h1>
 
-<h1>Create Blog</h1>
-@using (Html.BeginForm("SendBlogItem", "Admin", FormMethod.Post))
-{
-    @Html.LabelFor(m => m.Writer, new { @value = @Model.Writer })
-    @Html.TextBoxFor(m => m.Writer)
-    @Html.LabelFor(m=>m.Language)
-    <select asp-for="Language" id="BlogLanguage">
-        @foreach(var item in ViewBag.BlogLanguage)
-        {
-            <option value="@item.Name">@item.Name</option>
-        }
-    </select>
-    @Html.LabelFor(m => m.Title)
-    @Html.TextBoxFor(m => m.Title)
-    @Html.LabelFor(m => m.Body)
-    <textarea asp-for="Body" id="body" class="ckeditor" name="body" typeof="text"></textarea>
+    @using (Html.BeginForm("SendBlogItem", "Admin", FormMethod.Post))
+    {
+    <div class="col-6 form-group">
+        @Html.LabelFor(m => m.Writer, new { @value = @Model.Writer })
+        @Html.TextBoxFor(m => m.Writer, new{ @class = "form-control" })
+    </div>
+    <div class="col-6 form-group">
+        @Html.LabelFor(m=>m.Language)
+        <select class="form-control" asp-for="Language" id="BlogLanguage">
+            @foreach(var item in ViewBag.BlogLanguage)
+            {
+                <option value="@item.Name">@item.Name</option>
+            }
+        </select>
+    </div>
+    <div class="col-12 form-group">
+        @Html.LabelFor(m => m.Title)
+        @Html.TextBoxFor(m => m.Title, new{ @class = "form-control" })
+    </div>
+    <div class="col-12">
+        @Html.LabelFor(m => m.Body)
+        <textarea asp-for="Body" id="body" class="ckeditor" name="body" typeof="text"></textarea>
+    </div>
+
     <button type="submit" onclick="insert()" id="saveData">Save</button>
 }
-
+    </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="~/js/ckeditor/ckeditor.js"></script>
